@@ -1,0 +1,24 @@
+{
+    "name": "softnex/action-mapper",
+    "description": "Action Mapper do Luís, congelado na versão utilizada pela softnex",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+			"name" : "Luís Otávio Cobucci Oblonczyk",
+			"email" : "lcobucci@gmail.com"            
+        },
+        {
+            "name": "Alexandre Machado",
+            "email": "axmachado@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php" : ">=5.3",
+        "symfony/http-foundation": "~2",
+        "doctrine/annotations": "~1"
+    },
+    "autoload": {
+        "psr-4" : { "" : "src/" }
+    }
+}
