@@ -1,35 +1,24 @@
 {
-	"name" : "lcobucci/action-mapper",
-	"description" : "Front controller framework for PHP 5.3+ applications",
-	"type" : "library",
-	"authors" : [{
+    "name": "softnex/action-mapper",
+    "description": "Action Mapper do Luís, congelado na versão utilizada pela softnex",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
 			"name" : "Luís Otávio Cobucci Oblonczyk",
-			"email" : "lcobucci@gmail.com"
-		}
-	],
-	"keywords" : [
-		"front-controller"
-	],
-	"homepage" : "http://lcobucci.github.io/action-mapper/",
-	"license" : [
-		"BSD-3-Clause"
-	],
-	"require" : {
-		"php" : ">=5.3.9",
-		"symfony/http-foundation" : "~2.4",
-		"lcobucci/di-builder" : "~2.0",
-		"doctrine/annotations" : "~1.2",
-		"doctrine/cache" : "~1.3",
-		"psr/log" : "~1.0"
-	},
-	"require-dev" : {
-		"phpunit/phpunit" : "*",
-		"squizlabs/php_codesniffer" : "*",
-		"phpmd/phpmd" : "*"
-	},
-	"autoload" : {
-		"psr-4" : {
-			"Lcobucci\\ActionMapper2\\" : ["src/", "test"]
-		}
-	}
+			"email" : "lcobucci@gmail.com"            
+        },
+        {
+            "name": "Alexandre Machado",
+            "email": "axmachado@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php" : ">=5.3",
+        "symfony/http-foundation": "~2",
+        "doctrine/annotations": "~1"
+    },
+    "autoload": {
+        "psr-4" : { "" : "src/" }
+    }
 }
