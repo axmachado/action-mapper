@@ -3,4 +3,5 @@
 /.project
 /vendor/
 *~
-/nbproject/private/
+/nbproject/private
+
