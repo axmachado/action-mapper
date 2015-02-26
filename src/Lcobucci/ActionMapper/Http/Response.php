@@ -53,7 +53,7 @@ class Response
 	 */
 	public function redirect($uri)
 	{
-	    if (preg_match('/^https?\:\/\//i', $uri) === false) {
+	    if (!preg_match('/^https?\:\/\//i', $uri)) {
 	        $uri = $this->application->getUrl() . $uri;
 	    }
 
