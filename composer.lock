@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d4003f1e47d2d2de9b01f831d9fe6592",
+    "hash": "c9a49785b8076c9d54f14affe31a165e",
     "packages": [
         {
             "name": "doctrine/annotations",
-            "version": "dev-master",
+            "version": "v1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "3b6668f54ad3f95d68b64a742f6b0de55d6caeb1"
+                "reference": "eeda578cbe24a170331a1cfdf78be723412df7a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/3b6668f54ad3f95d68b64a742f6b0de55d6caeb1",
-                "reference": "3b6668f54ad3f95d68b64a742f6b0de55d6caeb1",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/eeda578cbe24a170331a1cfdf78be723412df7a4",
+                "reference": "eeda578cbe24a170331a1cfdf78be723412df7a4",
                 "shasum": ""
             },
             "require": {
@@ -72,11 +72,11 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2014-11-04 15:34:10"
+            "time": "2014-12-20 20:49:38"
         },
         {
             "name": "doctrine/lexer",
-            "version": "dev-master",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
@@ -130,29 +130,30 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "2.7.x-dev",
+            "version": "v2.6.5",
             "target-dir": "Symfony/Component/HttpFoundation",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "7efb1b7def9eebcb925bc8d1c05c056cbe7fe29c"
+                "reference": "d527885e37b55ec0e3dc6f4b70566d0f9b2f2388"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/7efb1b7def9eebcb925bc8d1c05c056cbe7fe29c",
-                "reference": "7efb1b7def9eebcb925bc8d1c05c056cbe7fe29c",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/d527885e37b55ec0e3dc6f4b70566d0f9b2f2388",
+                "reference": "d527885e37b55ec0e3dc6f4b70566d0f9b2f2388",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "symfony/expression-language": "~2.4"
+                "symfony/expression-language": "~2.4",
+                "symfony/phpunit-bridge": "~2.7"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -179,14 +180,18 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
-            "time": "2014-11-10 18:00:54"
+            "time": "2015-03-13 17:37:22"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "symfony/http-foundation": 0,
+        "doctrine/annotations": 0
+    },
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3"
     },
