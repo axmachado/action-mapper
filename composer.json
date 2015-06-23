@@ -14,8 +14,8 @@
     ],
     "require": {
         "php" : ">=5.3",
-        "symfony/http-foundation": "2.6.*@stable",
-        "doctrine/annotations": "1.*@stable"
+        "symfony/http-foundation": ">2.6.0@stable",
+        "doctrine/annotations": ">1.0.0@stable"
     },
     "autoload": {
         "psr-4" : { "" : "src/" }
